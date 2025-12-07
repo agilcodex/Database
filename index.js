@@ -41,6 +41,14 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
       continue;
     }
 
+})();
+
+    if (res.resultCode === 1) {
+      console.log("✔️ Successfully get server Singapore");
+      await delay(3000);
+      continue;
+    }
+
     // Response lain
     console.log("ℹ️ Response tidak dikenali:", res.resultCode);
     await delay(3000);
