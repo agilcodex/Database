@@ -29,7 +29,7 @@ const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
     // ====== CUSTOM HANDLERS ======
 
-    if (res.resultCode === 2108) {
+    if (res.resultCode === 2109) {
       console.log("⚠️ Server responded with no stock.");
       await delay(3000);
       continue;
